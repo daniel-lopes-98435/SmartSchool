@@ -12,7 +12,7 @@ namespace SmartSchool.WebAPI.Controllers
         public List<Aluno> Alunos = new List<Aluno>(){
             new Aluno(){
                 Id=1,
-                Nome = "José",
+                Nome = "Thainara",
                 Sobrenome = "Silva",
                 Telefone = "912345678"
             },
