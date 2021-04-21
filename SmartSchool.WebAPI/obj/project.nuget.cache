@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kpgC1JZdGphueoVFaHtMau1B2l0P1UGyD/MJqJm3/dqNfWNm0RSGDuXqOeYrU3dT9fSDyY4iwFRN999TNW8x7w==",
+  "dgSpecHash": "VwPbaA0zHK2T54zLB5asVMdSGyCWvTOzVPOOdu18zRMAwJbcNCbAz4KqpOkQXdczSBJzaR3X+vhluVaZygL02A==",
   "success": true,
-  "projectFilePath": "D:\\Desenvolvimento Web\\SmartSchool\\SmartSchool.Webapi\\SmartSchool.WebAPI.csproj",
+  "projectFilePath": "D:\\Desenvolvimento Web\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.2\\microsoft.aspnetcore.jsonpatch.3.1.2.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.2\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.2.nupkg.sha512",

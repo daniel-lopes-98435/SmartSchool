@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": ".NET Core Attach",
             "type": "coreclr",
@@ -16,7 +17,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/SmartSchool.WebAPI/bin/Debug/net5.0/SmartSchool.WebAPI.dll",
+            "program": "${workspaceFolder}/SmartSchool.WebAPI/bin/Debug/netcoreapp3.1/SmartSchool.WebAPI.dll",
             "args": [],
             "cwd": "${workspaceFolder}/SmartSchool.WebAPI",
             "stopAtEntry": false,
