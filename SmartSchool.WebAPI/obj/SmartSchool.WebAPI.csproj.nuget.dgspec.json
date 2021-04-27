@@ -1,35 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desenvolvimento Web\\SmartSchool\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj": {}
+    "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj": {}
   },
   "projects": {
-    "D:\\Desenvolvimento Web\\SmartSchool\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj": {
+    "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desenvolvimento Web\\SmartSchool\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj",
+        "projectUniqueName": "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj",
         "projectName": "SmartSchool.WebAPI",
-        "projectPath": "D:\\Desenvolvimento Web\\SmartSchool\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj",
-        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "D:\\Desenvolvimento Web\\SmartSchool\\SmartSchool.WebAPI\\obj\\",
+        "projectPath": "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Lopes\\.nuget\\packages\\",
+        "outputPath": "C:\\SmartSchool\\smartschool.webapi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Lopes\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,7 +35,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -49,7 +42,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
@@ -82,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
         }
       }
     }
