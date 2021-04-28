@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj": {}
+    "C:\\SmartSchool\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj": {
+    "C:\\SmartSchool\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj",
+        "projectUniqueName": "C:\\SmartSchool\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj",
         "projectName": "SmartSchool.WebAPI",
-        "projectPath": "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj",
+        "projectPath": "C:\\SmartSchool\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj",
         "packagesPath": "C:\\Users\\Lopes\\.nuget\\packages\\",
-        "outputPath": "C:\\SmartSchool\\smartschool.webapi\\obj\\",
+        "outputPath": "C:\\SmartSchool\\SmartSchool.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lopes\\AppData\\Roaming\\NuGet\\NuGet.Config"
