@@ -32,7 +32,7 @@ namespace SmartSchool.WebAPI.Controllers
         public IActionResult GetById(int id){
             var aluno = _repo.GetAlunoById(id,false);
             if(aluno == null) return BadRequest("Aluno não encontrado");
-            var alunoDto = _mapper.Map<Aluno>(aluno);
+            var alunoDto = _mapper.Map<AlunoDto>(aluno);
             return Ok(alunoDto);
         }
  
@@ -52,7 +52,9 @@ namespace SmartSchool.WebAPI.Controllers
 
         [HttpPut("{id}")]
         public IActionResult Put(int id, AlunoDto model){
+
             var aluno = _repo.GetAlunoById(id);
+            
             if(aluno ==null) return BadRequest("Aluno não encontrado");
 
             _mapper.Map(model,aluno);

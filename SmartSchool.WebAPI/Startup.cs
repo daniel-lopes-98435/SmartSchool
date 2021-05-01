@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,17 @@ namespace SmartSchool.WebAPI
                         opt => opt.SerializerSettings.ReferenceLoopHandling =
                         Newtonsoft.Json.ReferenceLoopHandling.Ignore
                     );
+
+            services.AddSwaggerGen( opt =>
+                opt.SwaggerDoc(
+                    "smartschoolapi",
+                    new Microsoft.OpenApi.Models.OpenApiInfo(){
+                        Title="Smart School API",
+                        Version="1.0"
+                    }
+                )
+
+            );
             /*
             services.AddSwaggerGen(c =>
             {
@@ -53,6 +65,13 @@ namespace SmartSchool.WebAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger()
+                    .UseSwaggerUI( opt =>
+                    {
+                        opt.SwaggerEndpoint("/swagger/smartschoolapi/swagger.json","smartschoolapi");
+                        opt.RoutePrefix = "";
+                      
+                    });
                 //app.UseSwagger();
                 //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SmartSchool.WebAPI v1"));
             }
