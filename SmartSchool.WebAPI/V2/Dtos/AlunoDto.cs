@@ -1,10 +1,10 @@
 using System;
 
-namespace SmartSchool.WebAPI.Dtos
+namespace SmartSchool.WebAPI.V2.Dtos
 {
 
     /// <summary>
-    /// Este é o DTO para Alunos
+    /// Este é o DTO para Alunos V2
     /// </summary>
     /// <returns></returns>         
 

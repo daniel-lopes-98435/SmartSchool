@@ -4,33 +4,63 @@
         <name>SmartSchool.WebAPI</name>
     </assembly>
     <members>
-        <member name="T:SmartSchool.WebAPI.Controllers.AlunoController">
+        <member name="T:SmartSchool.WebAPI.V1.Controllers.AlunoController">
             <summary>
             Versão 1 do meu controlador de Alunos
             </summary>  
         </member>
-        <member name="M:SmartSchool.WebAPI.Controllers.AlunoController.#ctor(SmartSchool.WebAPI.Data.IRepository,AutoMapper.IMapper)">
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.#ctor(SmartSchool.WebAPI.Data.IRepository,AutoMapper.IMapper)">
             <summary>
             
             </summary>
             <param name="repo"></param>
             <param name="mapper"></param>        
         </member>
-        <member name="M:SmartSchool.WebAPI.Controllers.AlunoController.Get">
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.Get">
             <summary>
             Método para listar todos os alunos
             </summary>
             <returns></returns>         
         </member>
-        <member name="M:SmartSchool.WebAPI.Controllers.AlunoController.GetById(System.Int32)">
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.GetById(System.Int32)">
             <summary>
             Método para listar apenas um alunos
             </summary>     
             <returns></returns> 
         </member>
-        <member name="T:SmartSchool.WebAPI.Dtos.AlunoDto">
+        <member name="T:SmartSchool.WebAPI.V1.Dtos.AlunoDto">
             <summary>
             Este é o DTO para Alunos
+            </summary>
+            <returns></returns>         
+        </member>
+        <member name="T:SmartSchool.WebAPI.V2.Controllers.AlunoController">
+            <summary>
+            Versão 2 do controlador de Alunos
+            </summary>  
+        </member>
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.#ctor(SmartSchool.WebAPI.Data.IRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+            <param name="mapper"></param>        
+        </member>
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.Get">
+            <summary>
+            V2 Método para listar todos os alunos
+            </summary>
+            <returns></returns>         
+        </member>
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.GetById(System.Int32)">
+            <summary>
+            V2 Método para listar apenas um alunos
+            </summary>     
+            <returns></returns> 
+        </member>
+        <member name="T:SmartSchool.WebAPI.V2.Dtos.AlunoDto">
+            <summary>
+            Este é o DTO para Alunos V2
             </summary>
             <returns></returns>         
         </member>

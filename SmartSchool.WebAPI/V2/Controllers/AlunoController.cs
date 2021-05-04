@@ -4,17 +4,17 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SmartSchool.WebAPI.Data;
-using SmartSchool.WebAPI.Dtos;
+using SmartSchool.WebAPI.V2.Dtos;
 using SmartSchool.WebAPI.Models;
 
-namespace SmartSchool.WebAPI.Controllers
+namespace SmartSchool.WebAPI.V2.Controllers
 {
 
     /// <summary>
-    /// Versão 1 do meu controlador de Alunos
+    /// Versão 2 do controlador de Alunos
     /// </summary>  
     [ApiController]
-    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class AlunoController : ControllerBase
     {
@@ -32,7 +32,7 @@ namespace SmartSchool.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Método para listar todos os alunos
+        /// V2 Método para listar todos os alunos
         /// </summary>
         /// <returns></returns>         
         [HttpGet]
@@ -45,7 +45,7 @@ namespace SmartSchool.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Método para listar apenas um alunos
+        /// V2 Método para listar apenas um alunos
         /// </summary>     
         /// <returns></returns> 
         [HttpGet("{id}")]
