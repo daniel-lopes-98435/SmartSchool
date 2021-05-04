@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1thviOs4h5hF6eMoQZ1V+fGUJoeWNNoXKAH7Pgc7dbOBlql++57JggiJThrAw+iCBIo/wG1nI4f9O5XQkghxTg==",
+  "dgSpecHash": "1+MeVQJQxMG7TbVpsJVK1vx0CErVrRncXcw0lLhHMOSEc0GHth2W/B6qwlM+fAR0Lh9LLZunL43ppeNLnwo8Mg==",
   "success": true,
   "projectFilePath": "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\Lopes\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Lopes\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.2\\microsoft.aspnetcore.jsonpatch.3.1.2.nupkg.sha512",
     "C:\\Users\\Lopes\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.2\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.2.nupkg.sha512",
+    "C:\\Users\\Lopes\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.1.1\\microsoft.aspnetcore.mvc.versioning.4.1.1.nupkg.sha512",
+    "C:\\Users\\Lopes\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\4.1.1\\microsoft.aspnetcore.mvc.versioning.apiexplorer.4.1.1.nupkg.sha512",
     "C:\\Users\\Lopes\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Lopes\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Lopes\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

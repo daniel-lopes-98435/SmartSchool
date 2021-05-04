@@ -9,17 +9,32 @@ using SmartSchool.WebAPI.Models;
 
 namespace SmartSchool.WebAPI.Controllers
 {
+
+    /// <summary>
+    /// Versão 1 do meu controlador de Alunos
+    /// </summary>  
     [ApiController]
-    [Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class AlunoController : ControllerBase
     {
         private readonly IRepository _repo;
         private readonly IMapper _mapper;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="repo"></param>
+        /// <param name="mapper"></param>        
         public AlunoController(IRepository repo,IMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
         }
+
+        /// <summary>
+        /// Método para listar todos os alunos
+        /// </summary>
+        /// <returns></returns>         
         [HttpGet]
         public IActionResult Get(){
 
@@ -28,6 +43,11 @@ namespace SmartSchool.WebAPI.Controllers
             return Ok(_mapper.Map<IEnumerable<AlunoDto>>(alunos));
 
         }
+
+        /// <summary>
+        /// Método para listar apenas um alunos
+        /// </summary>     
+        /// <returns></returns> 
         [HttpGet("{id}")]
         public IActionResult GetById(int id){
             var aluno = _repo.GetAlunoById(id,false);

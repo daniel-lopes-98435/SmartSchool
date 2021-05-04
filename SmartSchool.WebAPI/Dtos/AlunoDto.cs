@@ -2,6 +2,12 @@ using System;
 
 namespace SmartSchool.WebAPI.Dtos
 {
+
+    /// <summary>
+    /// Este é o DTO para Alunos
+    /// </summary>
+    /// <returns></returns>         
+
     public class AlunoDto
     {
         public int Id { get; set; }   
