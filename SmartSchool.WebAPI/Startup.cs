@@ -21,8 +21,6 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace SmartSchool.WebAPI
 {
-
-
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -36,16 +34,16 @@ namespace SmartSchool.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SmartContext>(
-                context => context.UseSqlite(Configuration.GetConnectionString("Default"))
+                context => context.UseMySql(Configuration.GetConnectionString("MySqlConnection"))
             );
 
             services.AddControllers()
                     .AddNewtonsoftJson(
                         opt => opt.SerializerSettings.ReferenceLoopHandling =
-                        Newtonsoft.Json.ReferenceLoopHandling.Ignore
-                    );
+                        Newtonsoft.Json.ReferenceLoopHandling.Ignore );
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             services.AddScoped<IRepository,Repository>();
 
             services.AddVersionedApiExplorer(options => 
@@ -80,42 +78,32 @@ namespace SmartSchool.WebAPI
                 opt.IncludeXmlComments(xlmCommentsFullPath);
 
             });
-            /*
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SmartSchool.WebAPI", Version = "v1" });
-            });
-            */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env , IApiVersionDescriptionProvider apiProviderDescription)
+        public void Configure(IApplicationBuilder app, 
+                                IWebHostEnvironment env, 
+                                IApiVersionDescriptionProvider apiProviderDescription)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger()
-                    .UseSwaggerUI( options =>
-                    {
-
-                   foreach (var description in apiProviderDescription.ApiVersionDescriptions)
-                   {                       
-                        options.SwaggerEndpoint(
-                            $"/swagger/{description.GroupName}/swagger.json", 
-                            description.GroupName.ToUpperInvariant());
-                   }
-                   options.RoutePrefix = "";
-                      
-                    });
-                //app.UseSwagger();
-                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SmartSchool.WebAPI v1"));
             }
-
-            //app.UseHttpsRedirection();
-
             app.UseRouting();
 
-            //app.UseAuthorization();
+            app.UseSwagger()
+                .UseSwaggerUI( options =>
+                {
+
+                foreach (var description in apiProviderDescription.ApiVersionDescriptions)
+                {                       
+                    options.SwaggerEndpoint(
+                        $"/swagger/{description.GroupName}/swagger.json", 
+                        description.GroupName.ToUpperInvariant());
+                }
+                options.RoutePrefix = "";
+                    
+                });
 
             app.UseEndpoints(endpoints =>
             {
