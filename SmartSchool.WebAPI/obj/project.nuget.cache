@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D3vDAejKXnKLCuft9mDRLQUIDCf3++Rlb8XFvhOZxzOK1nHTTzy7iUZDCCUnCyNOmPpIpowjgr+vaFZpHycjiQ==",
+  "dgSpecHash": "nj/Zz7Q9IWXNswy/ihV3mvOJFkhgmRjsHb0Fe/eR5hu9udy9XbD4iqFefn4ZYyXX0DzFaenJBlBm/mR6yDf+/g==",
   "success": true,
-  "projectFilePath": "C:\\SmartSchool\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj",
+  "projectFilePath": "C:\\SmartSchool\\smartschool.webapi\\SmartSchool.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lopes\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Lopes\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

@@ -105,6 +105,8 @@ namespace SmartSchool.WebAPI
                     
                 });
 
+            app.UseCors(cs => cs.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
